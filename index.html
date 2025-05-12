@@ -12,7 +12,7 @@
             font-family: Calibri, sans-serif;
         }
         .background {
-            background-image: url('background.jpg');
+            background-image: url('background2.jpg');
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -51,18 +51,18 @@
     <div class="background">
         <div class="content">
             <h1>BAR CERROS DE CHENA, APOQUINDO</h1>
-            <p>Nicolas Aviles</p>
-            <p>19.288.179-K</p>
-            <p>Banco de Chile</p>
-            <p>Cuenta Corriente</p>
-            <p>00-801-11582-05</p>
-            <p>naviles.e@gmail.com</p>
+            <p>Nombre: Gastromica Saso Spa</p>
+            <p>Rut: 77.993.067-K</p>
+            <p>Banco: Banco Itaú</p>
+            <p>Tipo de cuenta: Cuenta Corriente</p>
+            <p>Número de cuenta: 229416572</p>
+            <p>barportezuelo@gmail.com</p>
             <button onclick="copyToClipboard()">Copiar datos</button>
         </div>
     </div>
     <script>
         function copyToClipboard() {
-            const text = `Nicolas Aviles\n19.288.179-K\nBanco de Chile\nCuenta Corriente\n00-801-11582-05\nnaviles.e@gmail.com`;
+            const text = `Gastromica Saso Spa\n77.993.067-K\nBanco Itau\nCuenta Corriente\n229416572\nbarportezuelo@gmail.com`;
             navigator.clipboard.writeText(text).then(() => {
                 alert('Datos copiados al portapapeles');
             });
