@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR CERROS DE CHENA, APOQUINDO</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Calibri, sans-serif;
+        }
+        .background {
+            background-image: url('background.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            background-color: rgba(128, 128, 128, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>BAR CERROS DE CHENA, APOQUINDO</h1>
+            <p>Nicolas Aviles</p>
+            <p>19.288.179-K</p>
+            <p>Banco de Chile</p>
+            <p>Cuenta Corriente</p>
+            <p>00-801-11582-05</p>
+            <p>naviles.e@gmail.com</p>
+            <button onclick="copyToClipboard()">Copiar datos</button>
+        </div>
+    </div>
+    <script>
+        function copyToClipboard() {
+            const text = `Nicolas Aviles\n19.288.179-K\nBanco de Chile\nCuenta Corriente\n00-801-11582-05\nnaviles.e@gmail.com`;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Datos copiados al portapapeles');
+            });
+        }
+    </script>
+</body>
+</html>
