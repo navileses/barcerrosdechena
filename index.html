@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAR CERROS DE CHENA, APOQUINDO</title>
+    <title>Copiar datos</title>
     <style>
         body, html {
             height: 100%;
@@ -53,16 +53,16 @@
             <h1>BAR CERROS DE CHENA, APOQUINDO</h1>
             <p>Nombre: Gastromica Saso Spa</p>
             <p>Rut: 77.993.067-K</p>
-            <p>Banco: Banco Itaú</p>
+            <p>Banco: Banco Itau</p>
             <p>Tipo de cuenta: Cuenta Corriente</p>
-            <p>Número de cuenta: 229416572</p>
-            <p>barportezuelo@gmail.com</p>
+            <p>Número de cuenta: 00-022-94165-72</p>
+            <p>barcerrosdechena.apoquindo@gmail.com</p>
             <button onclick="copyToClipboard()">Copiar datos</button>
         </div>
     </div>
     <script>
         function copyToClipboard() {
-            const text = `Gastromica Saso Spa\n77.993.067-K\nBanco Itau\nCuenta Corriente\n229416572\nbarportezuelo@gmail.com`;
+            const text = `Gastromica Saso Spa\n77.993.067-K\nBanco Itau\nCuenta Corriente\n229416572\nbarcerrosdechena.apoquindo@gmail.com`;
             navigator.clipboard.writeText(text).then(() => {
                 alert('Datos copiados al portapapeles');
             });
