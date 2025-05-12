@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Information</h1>
+        <div class="info" id="banking-info">
+            Nicolas Aviles<br>
+            19.288.179-K<br>
+            Banco de Chile<br>
+            Cuenta Corriente<br>
+            00-801-11582-05<br>
+            naviles.e@gmail.com
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var info = document.getElementById('banking-info').innerText;
+            navigator.clipboard.writeText(info).then(function() {
+                alert('Banking information copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
